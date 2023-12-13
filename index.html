@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Alegreya+SC:ital,wght@1,500&family=Asap:wght@700&family=IBM+Plex+Mono:ital,wght@1,700&display=swap"
+			rel="stylesheet"
+		/>
+		<title>page builder</title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="form-container">
+				<form id="form">
+					<div class="form-inputs">
+						<div class="form-control">
+							<label for="kind-input">סוג אלמנט</label>
+							<div class="kind-inputs-inner">
+								<select id="selectKind">
+									<option id="op11">div</option>
+									<option id="op22">h1</option>
+									<option id="op33">h2</option>
+									<option id="op44">p</option>
+									<option id="op55">button</option>
+								</select>
+							</div>
+						</div>
+						<div class="form-control">
+							<label for="width-input">רוחב אלמנט</label>
+							<div class="width-inputs-inner">
+								<input type="number" value="auto" id="width-input" name="width-input" />
+								<select id="selectWidth">
+									<option id="op1">px</option>
+									<option id="op2">%</option>
+									<option id="op3">em</option>
+									<option id="op4">rem</option>
+								</select>
+							</div>
+						</div>
+						<div class="form-control">
+							<label for="hieght-input">גובה אלמנט</label>
+							<div class="hieght-inputs-inner">
+								<input type="number" value="auto" id="hieght-input" name="hieght-input" />
+								<select id="selectHieght">
+									<option id="op1">px</option>
+									<option id="op2">%</option>
+									<option id="op3">em</option>
+									<option id="op4">rem</option>
+								</select>
+							</div>
+						</div>
+						<div class="form-control">
+							<div class="color-container">
+								<label for="color-input">צבע פונט</label>
+								<input type="color" required id="color-input" name="color-input" />
+							</div>
+						</div>
+						<div class="form-control">
+							<div class="color-container">
+								<label for="bgColor-input">צבע רקע</label>
+								<input type="color" required id="bgColor-input" value="#ffffff" name="bgColor-input" />
+							</div>
+						</div>
+						<div class="form-control">
+							<label for="fontSize-input">גודל פונט</label>
+							<div class="fontSize-inputs-inner">
+								<input type="number" required value="" id="fontSize-input" name="fontSize-input" />
+								<select id="selectFontS">
+									<option id="op111">px</option>
+									<option id="op222">%</option>
+									<option id="op333">em</option>
+									<option id="op444">rem</option>
+								</select>
+							</div>
+						</div>
+						<div class="form-control">
+							<label for="text-input">תוכן :</label>
+							<div class="text-inputs-inner">
+								<textarea type="text" style="height: 85px" required value="" id="text-input" name="text-input"></textarea>
+							</div>
+						</div>
+
+						<div class="radious">
+							<label for="">BORDER RADIOUS</label>
+							<input type="checkbox" value="off" id="radiousCheck" />
+						</div>
+
+						<div class="margin">
+							<label for="">MARGIN</label>
+							<input type="checkbox" value="off" id="marginCheck" />
+						</div>
+
+						<div class="padding">
+							<label for="">PADDING</label>
+							<input type="checkbox" value="off" id="paddingCheck" />
+						</div>
+						<div class="flex">
+							<label for="">FLEX</label>
+							<input type="checkbox" value="off" id="flexCheck" />
+						</div>
+
+						<div class="form-control buttonArea">
+							<button type="submit" id="submitBtn" class="button-85" name="submitBtn" value="שלח">שלח</button>
+						</div>
+					</div>
+				</form>
+				<div class="buttonContainer">
+					<button id="clearBtn" class="button-85" role="button" name="clearBtn" value="מחק">מחק</button>
+					<button id="saveBtn" class="button-85" role="button" name="saveBtn" value="שמור">שמור</button>
+					<button id="addBtn" class="button-85" role="button" name="addBtn" value="שחזור">שחזור</button>
+				</div>
+			</div>
+			<div class="content-container" id="content-container"></div>
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html>

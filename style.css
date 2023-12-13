@@ -1,0 +1,182 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Alegreya SC", serif;
+	font-family: "Asap", sans-serif;
+	font-family: "IBM Plex Mono", monospace;
+}
+
+.container {
+	display: flex;
+	width: 100vw;
+	height: 100vh;
+}
+.form-container {
+	background: url("backgroundMix.jpg");
+
+	background-blend-mode: overlay;
+	/*background-color: black;*/
+	height: 100vh;
+	flex: 1;
+	color: azure;
+	border-radius: 10px;
+}
+.content-container {
+	background-image: linear-gradient(rgba(212, 212, 212, 0.824), rgba(108, 212, 244, 0.737)),
+		url("./light-trails-road-distant-horizon-moody-sky_717440-802.jpg");
+	display: flex;
+	justify-content: center;
+	flex: 3;
+}
+.form-control {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: start;
+	margin: 10px;
+}
+#form {
+	margin: 10px;
+}
+.buttonContainer {
+	display: flex;
+	margin-top: 20px;
+	justify-content: space-around;
+	align-items: center;
+}
+button {
+	cursor: pointer;
+}
+
+.form-input {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: flex-start;
+}
+input[type="submit"] {
+	margin-top: 2em;
+	width: 100px;
+}
+#width-input {
+	margin-bottom: 5px;
+}
+#hieght-input {
+	margin-bottom: 5px;
+}
+label {
+	margin: 5px;
+}
+
+.color-container {
+	width: 100%;
+	display: flex;
+	justify-content: start;
+	gap: 10px;
+}
+.color-input {
+	margin-left: 5px;
+}
+.kind-inputs-inner,
+#selectKind {
+	width: 100%;
+}
+
+.radious {
+	margin: 5px;
+	padding: 5px;
+}
+#switchClick {
+	width: 15px;
+	height: 15px;
+}
+.boxStyle {
+	display: flex;
+	padding: 10px;
+	text-align: center;
+	justify-content: center;
+	align-content: center;
+}
+
+.buttonArea {
+	display: flex;
+	flex-direction: row;
+	gap: 10px;
+}
+
+#marginCheck {
+	margin: 10px;
+}
+#paddingCheck {
+	margin: 10px;
+}
+#flexCheck {
+	margin: 10px;
+}
+
+select,
+input {
+	opacity: 0.8;
+	background-color: white;
+	border: solid 2px rgb(255, 255, 255);
+}
+.pointer {
+	cursor: pointer;
+}
+/* CSS */
+.button-85 {
+	padding: 0.4em 0.7em;
+	border: none;
+	outline: none;
+	color: rgb(255, 255, 255);
+	background: #111;
+	cursor: pointer;
+	position: relative;
+	z-index: 0;
+	border-radius: 10px;
+	user-select: none;
+	-webkit-user-select: none;
+	touch-action: manipulation;
+}
+
+.button-85:before {
+	content: "";
+	background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+	position: absolute;
+	top: -2px;
+	left: -2px;
+	background-size: 400%;
+	z-index: -1;
+	filter: blur(5px);
+	-webkit-filter: blur(5px);
+	width: calc(100% + 4px);
+	height: calc(100% + 4px);
+	animation: glowing-button-85 20s linear infinite;
+	transition: opacity 0.3s ease-in-out;
+	border-radius: 10px;
+}
+
+@keyframes glowing-button-85 {
+	0% {
+		background-position: 0 0;
+	}
+	50% {
+		background-position: 400% 0;
+	}
+	100% {
+		background-position: 0 0;
+	}
+}
+
+.button-85:after {
+	z-index: -1;
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: #222;
+	left: 0;
+	top: 0;
+	border-radius: 10px;
+}
